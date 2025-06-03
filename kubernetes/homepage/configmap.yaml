@@ -39,9 +39,9 @@ data:
             description: --
 
     - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
+        - OPNsense:
+            href: https://192.168.1.173/
+            description: --
   widgets.yaml: |
     - kubernetes:
         cluster:

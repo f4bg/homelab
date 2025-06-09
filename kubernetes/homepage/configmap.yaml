@@ -10,7 +10,7 @@ data:
     mode: cluster
   settings.yaml: |
     title: Piso Homepage
-    background: 
+    background:
       image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
       blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
       saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
@@ -45,20 +45,18 @@ data:
             description: --
             icon: https://static-00.iconduck.com/assets.00/kubernetes-icon-2048x1995-r1q3f8n7.png
             siteMonitor: https://192.168.1.200:32443
-            cluster:
-              # Shows cluster-wide statistics
-              show: true
-              # Shows the aggregate CPU stats
-              cpu: true
-              # Shows the aggregate memory stats
-              memory: true
-              # Shows a custom label
-              showLabel: true
-              label: "cluster"
+            statusStyle: "dot"
+             #widget:
+              #type: kubernetes
+              #url: https://192.168.1.200:32443
 
         - OPNsense:
-            href: https://192.168.1.173/
+            href: https://192.168.1.173
             description: --
+            icon: https://store-images.s-microsoft.com/image/apps.50971.0316e8e5-0d24-4ba0-b383-3c64f5271f6d.c2776803-acef-4e82-b6a5-24720f5f115b.76b43274-7d15-4c55-a69e-f9c6f5dd25a0
+            siteMonitor: https://192.168.1.173
+            statusStyle: "dot"
+
   widgets.yaml: |
     - kubernetes:
         cluster:

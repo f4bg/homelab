@@ -30,17 +30,31 @@ data:
     - Developer:
         - Github:
             - abbr: GH
-              href: https://github.com/
+              href: https://github.com
   services.yaml: |
       - Admin:
         - Proxmox:
-            href: http://192.168.1.10:8006/
+            href: http://192.168.1.10:8006
             description: --
-            icon: proxmox.png
+            icon: https://img.icons8.com/fluent/512/proxmox.png
+            siteMonitor: http://192.168.1.10:8006
+            statusStyle: "dot"
 
-        - Kubernetes-Dashboard:
+        - Kubernetes:
             href: https://192.168.1.200:32443
             description: --
+            icon: https://static-00.iconduck.com/assets.00/kubernetes-icon-2048x1995-r1q3f8n7.png
+            siteMonitor: https://192.168.1.200:32443
+            cluster:
+              # Shows cluster-wide statistics
+              show: true
+              # Shows the aggregate CPU stats
+              cpu: true
+              # Shows the aggregate memory stats
+              memory: true
+              # Shows a custom label
+              showLabel: true
+              label: "cluster"
 
         - OPNsense:
             href: https://192.168.1.173/

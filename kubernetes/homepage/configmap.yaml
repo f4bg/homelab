@@ -16,6 +16,10 @@ data:
       saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
       brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
       opacity: 50 # 0-100
+    layout:
+      Admin:
+        style: row
+        columns: 4
 #settings.yaml: |
   #  providers:
   #    longhorn:
@@ -28,17 +32,16 @@ data:
             - abbr: GH
               href: https://github.com/
   services.yaml: |
-    - My First Group:
+      - Admin:
         - Proxmox:
             href: http://192.168.1.10:8006/
             description: --
+            icon: proxmox.png
 
-    - My Second Group:
         - Kubernetes-Dashboard:
             href: https://192.168.1.200:32443
             description: --
 
-    - My Third Group:
         - OPNsense:
             href: https://192.168.1.173/
             description: --

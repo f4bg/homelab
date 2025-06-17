@@ -57,6 +57,12 @@ data:
             siteMonitor: https://192.168.1.173
             statusStyle: "dot"
 
+        - Vaultwarden:
+            href: https://vaultwarden.local
+            description: --
+            icon: https://global.discourse-cdn.com/free1/uploads/vaultwarden/original/1X/26a1c808c7d5849039d47820eef7889b3415e5ec.png
+            siteMonitor: 10.1.213.190
+            statusStyle: "dot"
   widgets.yaml: |
     - kubernetes:
         cluster:

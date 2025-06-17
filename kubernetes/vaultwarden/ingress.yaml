@@ -4,8 +4,11 @@ metadata:
   name: vaultwarden
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
+  tls:
+    - hosts:
+        - vaultwarden.local
+      secretName: vaultwarden-tls
   rules:
     - host: vaultwarden.local
       http:

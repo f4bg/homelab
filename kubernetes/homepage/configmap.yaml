@@ -51,10 +51,10 @@ data:
               #url: https://192.168.1.200:32443
 
         - OPNsense:
-            href: https://192.168.1.173
+            href: https://192.168.1.11
             description: --
             icon: https://store-images.s-microsoft.com/image/apps.50971.0316e8e5-0d24-4ba0-b383-3c64f5271f6d.c2776803-acef-4e82-b6a5-24720f5f115b.76b43274-7d15-4c55-a69e-f9c6f5dd25a0
-            siteMonitor: https://192.168.1.173
+            siteMonitor: https://192.168.1.11
             statusStyle: "dot"
 
         - Vaultwarden:

@@ -34,16 +34,16 @@ data:
   services.yaml: |
       - Admin:
         - Proxmox:
-            href: http://192.168.1.10:8006
+            href: https://192.168.1.10:8006
             description: --
             icon: https://img.icons8.com/fluent/512/proxmox.png
-            siteMonitor: http://192.168.1.10:8006
+            siteMonitor: https://192.168.1.10:8006
             statusStyle: "dot"
 
         - Kubernetes:
             href: https://192.168.1.200:32443
             description: --
-            icon: https://static-00.iconduck.com/assets.00/kubernetes-icon-2048x1995-r1q3f8n7.png
+            icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png
             siteMonitor: https://192.168.1.200:32443
             statusStyle: "dot"
              #widget:
@@ -61,7 +61,7 @@ data:
             href: https://vaultwarden.local
             description: --
             icon: https://global.discourse-cdn.com/free1/uploads/vaultwarden/original/1X/26a1c808c7d5849039d47820eef7889b3415e5ec.png
-            siteMonitor: 10.1.213.190
+            siteMonitor: https://vaultwarden.local
             statusStyle: "dot"
   widgets.yaml: |
     - kubernetes:

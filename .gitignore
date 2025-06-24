@@ -1,0 +1,17 @@
+# Kubernetes
+*.key
+*.crt
+*.pem
+secrets.yaml
+.env
+
+# Editor & OS files
+.DS_Store
+*.swp
+*.bak
+
+# Kustomize build output
+kustomization.yaml.backup
+
+# secretos
+kubernetes/vaultwarden/secret.yaml

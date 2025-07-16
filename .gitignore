@@ -15,3 +15,7 @@ kustomization.yaml.backup
 
 # secretos
 kubernetes/vaultwarden/secret.yaml
+
+#tls-cert folders
+**/tls-cert/
+

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: homepage
-  namespace: default
+  namespace: homepage
   labels:
     app.kubernetes.io/name: homepage
 spec:
@@ -28,7 +28,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
-              value: gethomepage.dev,192.168.1.200:32000 # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
+              value: gethomepage.dev,192.168.1.200:32000,homepage.local # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
           ports:
             - name: http
               containerPort: 3000

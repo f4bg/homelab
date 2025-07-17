@@ -41,10 +41,10 @@ data:
             statusStyle: "dot"
 
         - Kubernetes:
-            href: https://192.168.1.200:32443
+            href: https://microk8s.local
             description: --
             icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png
-            siteMonitor: https://192.168.1.200:32443
+            siteMonitor: https://microk8s.local
             statusStyle: "dot"
              #widget:
               #type: kubernetes

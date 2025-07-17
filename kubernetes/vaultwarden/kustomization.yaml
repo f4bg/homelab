@@ -3,4 +3,3 @@ resources:
   - service.yaml
   - pvc.yaml
   - ingress.yaml
-  - secret.yaml

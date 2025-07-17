@@ -8,7 +8,7 @@ spec:
   tls:
     - hosts:
         - vaultwarden.local
-      secretName: vaultwarden-tls
+      secretName: vaultwarden-local-tls
   rules:
     - host: vaultwarden.local
       http:
